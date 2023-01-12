@@ -1,4 +1,4 @@
-function! TestPy3() range
+function! main#TestPy3() range
     let symbol = input("Enter the symbol to join bbw with: ")
     let save_pos = getpos('.')
 
@@ -20,7 +20,7 @@ EOF
     execute "s/" .. currentLine .. "/" .. X .. "/"
     call setpos('.',save_pos)
 endfunction
-command! Test call g:TestPy3()
+command! Test call s:TestPy3()
 
-nnoremap <S-F1> :call TestPy3()<CR>
-vnoremap <S-F1> :call TestPy3()<CR>
+nnoremap <S-F1> :call main#TestPy3()<CR>
+vnoremap <S-F1> :call main#TestPy3()<CR>
