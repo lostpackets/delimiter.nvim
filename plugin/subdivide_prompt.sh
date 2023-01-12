@@ -24,5 +24,5 @@ EOF
 endfunction
 command! Test1 call s:TestPy4()
 
-nnoremap <F11> :call Test1<CR>
-vnoremap <F11> :call Test1<CR>
+map <F11> :Testone<CR>
+#vnoremap <F11> :Testone<CR>
