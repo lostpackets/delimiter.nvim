@@ -18,9 +18,12 @@ bbw = re.findall(r'.{'+str(num_chars)+'}', start)
 symbol = vim.eval('symbol')
 pr=symbol.join(bbw)
 EOF
+
     let X = pyeval('pr')
     execute "s/" .. currentLine .. "/" .. X .. "/"
     call setpos('.',save_pos)
 endfunction
+
+command! Testone call s:TestPy4()
 nnoremap <F11> :call TestPy4()<CR>
 vnoremap <F11> :call TestPy4()<CR>
