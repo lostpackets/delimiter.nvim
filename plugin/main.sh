@@ -21,5 +21,5 @@ EOF
 endfunction
 command! Test call s:TestPy3()
 
-nmap <silent> <v>P :Test<CR>
-" <v>P is the -1 for the Test command, can be changed to any desired keybind.
+nmap <silent> \\m :Test<CR>
+" \\m is the -1 for the Test command, can be changed to any desired keybind.
