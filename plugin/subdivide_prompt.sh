@@ -22,5 +22,7 @@ EOF
     execute "s/" .. currentLine .. "/" .. X .. "/"
     call setpos('.',save_pos)
 endfunction
-nnoremap <F11> :call TestPy4()<CR>
-vnoremap <F11> :call TestPy4()<CR>
+command! Test1 call s:TestPy4()
+
+nnoremap <F11> :call Test1<CR>
+vnoremap <F11> :call Test1<CR>
