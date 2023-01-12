@@ -1,4 +1,4 @@
-function! TestPy3() range
+function! TestPy4() range
     let num_chars = input("Enter the number of characters to divide into sections: ")
     let symbol = input("Enter the symbol to join bbw with: ")
     let save_pos = getpos('.')
@@ -22,5 +22,5 @@ EOF
     execute "s/" .. currentLine .. "/" .. X .. "/"
     call setpos('.',save_pos)
 endfunction
-nnoremap <F11> :call TestPy3()<CR>
-vnoremap <F11> :call TestPy3()<CR>
+nnoremap <F11> :call TestPy4()<CR>
+vnoremap <F11> :call TestPy4()<CR>
